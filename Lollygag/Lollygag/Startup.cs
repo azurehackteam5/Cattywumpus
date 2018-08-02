@@ -43,13 +43,20 @@ namespace Lollygag
             }
 
             app.UseStaticFiles();
-
+            /*
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
-            });
+            });*/
+
+            app.UseMvc(routes =>
+                {
+                    routes.MapRoute(
+                        name: "default",
+                        template: "{controller=LGUser}/{action=Index}/{id?}");
+                });
         }
     }
 }
