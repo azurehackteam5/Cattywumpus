@@ -48,10 +48,10 @@
     padding-bottom: 40px;
 }
 
-.navbar-nav li a img {
-    margin-top: -5px;
-    margin-right: 5px;
-}
+    .navbar-nav li a img {
+        margin-top: -5px;
+        margin-right: 5px;
+    }
 
 .navbar-header {
     border-style: solid;
@@ -67,6 +67,30 @@
     border-bottom-width: 1px;
     background-color: white;
 }
+
 li {
     margin-left: 50px;
+    font-weight: 600;
 }
+
+.welcome-container {
+    text-align: center;
+    margin: 50px 100px 20px 100px;
+}
+
+.welcome {
+    background-color: white;
+    border-bottom: 8px solid #ff9930;
+    padding-bottom: 20px;
+    width: 70%;
+    margin: auto;
+}
+
+    .welcome h2 {
+        font-weight: 700;
+    }
+
+    .welcome .btn {
+        color: white;
+        background-color: #223b63;
+    }
