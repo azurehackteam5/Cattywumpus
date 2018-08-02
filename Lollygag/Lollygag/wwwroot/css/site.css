@@ -68,6 +68,28 @@
     background-color: white;
 }
 
+ul.nav.navbar-nav {
+    margin-left: 15px;
+}
+
+hr {
+    border: 0;
+    clear: both;
+    display: block;
+    width: 100%;
+    background-color: rgb(150, 150, 150);
+    height: 1px;
+}
+
+.product {
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 5px 5px 5px rgb(150, 150, 150);
+    height: 200px;
+    width: 100%;
+    margin-top: 20px;
+}
+
 li {
     margin-left: 50px;
     font-weight: 600;
