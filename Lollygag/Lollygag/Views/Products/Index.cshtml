@@ -5,6 +5,55 @@
   Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+<script>
+
+  function showPopup() {
+
+    $('#product-modal').modal({
+    });
+
+  }
+
+</script>
+
+<div id="product-modal" class="modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-content-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header" style="background-color: orange;">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Bowyang: Gaming Platform</h4>
+      </div>
+      <div class="modal-body">
+
+        <div class="row">
+          <div class="col-md-9">
+            <img src="~/images/bowyang-lg.png" />
+          </div>
+          <div class="col-md-3">
+            <p>
+              Foundational Gaming
+              Platform, used by other
+              companies to build
+              games. Platform allows
+              players to earn crypto
+              coins as they play.
+              Platform allows
+              companies to launch new
+              ICOs or leverage existing
+              cryptocurrencies
+            </p>
+            <br />
+            <button class="center" type="button" class="btn btn-primary" data-dismiss="modal">Purchase</button>
+          </div>
+        </div>
+      </div>
+      @*<div class="modal-footer">
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>*@
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-12">
@@ -23,7 +72,7 @@
             <img src="~/images/@Html.DisplayFor(modelItem => item.LogoUrl)"
                  title="@Html.DisplayFor(modelItem => item.Name):  @Html.DisplayFor(modelItem => item.Description)" />
           </div>
-          <div><button class="btn btn-default">Learn More</button></div>
+          <div><button onclick="showPopup()" class="btn btn-default">Learn More</button></div>
 
 
         </div>

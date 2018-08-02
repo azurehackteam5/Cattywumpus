@@ -138,3 +138,13 @@ span.circle {
     border-width: 1px;
     padding: 0;
 }
+
+
+.modal-dialog.modal-content-lg {
+    margin-left: 200px;
+}
+
+
+    .modal-dialog.modal-content-lg .modal-content {
+        width: 1200px;
+    }
