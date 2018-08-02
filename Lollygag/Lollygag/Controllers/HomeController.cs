@@ -15,7 +15,7 @@ namespace Lollygag.Controllers
             return View();
         }
 
-        public IActionResult About()
+        public IActionResult MyProducts()
         {
             ViewData["Message"] = "Your application description page.";
 
