@@ -14,5 +14,12 @@ namespace Lollygag.Models
         }
 
         public DbSet<Lollygag.Models.Product> Product { get; set; }
+
+        public DbSet<Lollygag.Models.LGCatalog> LGCatalog { get; set; }
+        
+        public DbSet<Lollygag.Models.LGCompany> LGCompany { get; set; }
+
+        public DbSet<Lollygag.Models.LGRole> LGRole { get; set; }
+        public DbSet<Lollygag.Models.LGUser> LGUser { get; set; }
     }
 }
