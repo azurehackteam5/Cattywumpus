@@ -31,7 +31,8 @@ namespace Lollygag.Controllers
         // GET: LGUsers
         public async Task<IActionResult> Index()
         {
-            return View(await _context.LGUser.ToListAsync());
+            //return View(await _context.LGUser.ToListAsync());
+            return View();
         }
 
         // GET: LGUsers/Details/5
@@ -159,5 +160,8 @@ namespace Lollygag.Controllers
         {
             return _context.LGUser.Any(e => e.UserID == UserID);
         }
+
+
+
     }
 }
