@@ -135,5 +135,6 @@ span.circle {
     border-radius: 30px;
     border-style: solid;
     border-color: gray;
-    border-width: 1;
+    border-width: 1px;
+    padding: 0;
 }
