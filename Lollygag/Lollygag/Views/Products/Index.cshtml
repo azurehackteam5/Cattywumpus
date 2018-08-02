@@ -13,92 +13,92 @@
     </div>
   </div>
 
-  @*<div class="row">
+  <div class="row">
 
     @foreach (var item in Model)
     {
       <div class="col-md-3">
-        <div class="product"></div>
-      </div>
+        <div class="product">
+          <div>
+            <img src="~/images/@Html.DisplayFor(modelItem => item.LogoUrl)"
+                 title="@Html.DisplayFor(modelItem => item.Name):  @Html.DisplayFor(modelItem => item.Description)" />
+          </div>
+          <div><button class="btn btn-default">Learn More</button></div>
 
-      <tr>
-        <td>
-          @Html.DisplayFor(modelItem => item.Name)
-        </td>
-        <td>
-          @Html.DisplayFor(modelItem => item.Description)
-        </td>
-        <td>
-          @Html.DisplayFor(modelItem => item.LogoUrl)
-        </td>
-        <td>
-          @Html.DisplayFor(modelItem => item.PriceInfo)
-        </td>
-      </tr>
+
+        </div>
+      </div>
     }
 
 
-    <div class="col-md-3">
-      <div class="product"></div>
-    </div>
-    <div class="col-md-3">
-      <div class="product"></div>
-    </div>
-    <div class="col-md-3">
-      <div class="product"></div>
-    </div>
-    <div class="col-md-3">
-      <div class="product"></div>
-    </div>
-    <div class="col-md-3">
-      <div class="product"></div>
-    </div>
-    <div class="col-md-3">
-      <div class="product"></div>
-    </div>
-    <div class="col-md-3">
-      <div class="product"></div>
-    </div>
-    <div class="col-md-3">
-      <div class="product"></div>
-    </div>
-  </div>*@
+    @*<div class="col-md-3">
+        <div class="product"></div>
+      </div>
+      <div class="col-md-3">
+        <div class="product"></div>
+      </div>
+      <div class="col-md-3">
+        <div class="product"></div>
+      </div>
+      <div class="col-md-3">
+        <div class="product"></div>
+      </div>
+      <div class="col-md-3">
+        <div class="product"></div>
+      </div>
+      <div class="col-md-3">
+        <div class="product"></div>
+      </div>
+      <div class="col-md-3">
+        <div class="product"></div>
+      </div>
+      <div class="col-md-3">
+        <div class="product"></div>
+      </div>*@
+  </div>
 
-  <table class="table">
-    <thead>
-      <tr>
-        <th>
-          @Html.DisplayNameFor(model => model.Name)
-        </th>
-        <th>
-          @Html.DisplayNameFor(model => model.Description)
-        </th>
-        <th>
-          @Html.DisplayNameFor(model => model.LogoUrl)
-        </th>
-        <th>
-          @Html.DisplayNameFor(model => model.PriceInfo)
-        </th>
-        <th></th>
-      </tr>
-    </thead>
-    <tbody>
-      @foreach (var item in Model)
-      {
+  <div class="row">
+    <div class="col-md-3 col-md-offset-9">
+      <p></p>
+      <p class="command-link pull-right">View more products <span class="circle">&gt;</span></p>
+    </div>
+  </div>
+
+  @*<table class="table">
+      <thead>
         <tr>
-          <td>
-            @Html.DisplayFor(modelItem => item.Name)
-          </td>
-          <td>
-            @Html.DisplayFor(modelItem => item.Description)
-          </td>
-          <td>
-            @Html.DisplayFor(modelItem => item.LogoUrl)
-          </td>
-          <td>
-            @Html.DisplayFor(modelItem => item.PriceInfo)
-          </td>
+          <th>
+            @Html.DisplayNameFor(model => model.Name)
+          </th>
+          <th>
+            @Html.DisplayNameFor(model => model.Description)
+          </th>
+          <th>
+            @Html.DisplayNameFor(model => model.LogoUrl)
+          </th>
+          <th>
+            @Html.DisplayNameFor(model => model.PriceInfo)
+          </th>
+          <th></th>
         </tr>
-      }
-    </tbody>
-  </table>
+      </thead>
+      <tbody>
+        @foreach (var item in Model)
+        {
+          <tr>
+            <td>
+              @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+              @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+              @Html.DisplayFor(modelItem => item.LogoUrl)
+            </td>
+            <td>
+              @Html.DisplayFor(modelItem => item.PriceInfo)
+            </td>
+          </tr>
+        }
+      </tbody>
+    </table>*@

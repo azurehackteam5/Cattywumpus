@@ -88,6 +88,14 @@ hr {
     height: 200px;
     width: 100%;
     margin-top: 20px;
+    text-align: center;
+    vertical-align: bottom;
+    padding: 10px;
+}
+
+.product img {
+    height: 140px;
+    margin-bottom: 10px;
 }
 
 li {
@@ -116,3 +124,16 @@ li {
         color: white;
         background-color: #223b63;
     }
+
+.command-link {
+    font-size: 24px;
+}
+
+span.circle {
+    height: 40px;
+    width: 40px;
+    border-radius: 30px;
+    border-style: solid;
+    border-color: gray;
+    border-width: 1;
+}
